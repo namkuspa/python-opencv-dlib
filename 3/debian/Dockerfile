@@ -44,4 +44,4 @@ RUN echo "Dlib: ${DLIB_VERSION}" \
     && apt-get install -y $RUNTIME_DEPS --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* /usr/share/man /usr/local/share/man /tmp/*
 
-ENTRYPOINT ["python3"]
+CMD ["python3"]
